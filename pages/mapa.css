@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppin';
+  }
+  
+  .map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .map-container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .map-container .warning {
+    max-width: 100; /* Defina a largura máxima da imagem em relação ao contêiner */
+    height: auto;
+    cursor: pointer;
+  }
+  .overlay{
+    margin-top: -330px;
+    margin-left: 100px;
+    cursor: pointer;}
+
+    .popup {
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    position: fixed;
+    width: 290px;
+    height: 500px;
+    top: 220px;
+    left: -65px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #011526;
+    border-radius: 10px;
+    box-shadow: 0 9px 16px #011526;
+    text-align: center;
+}
+.pop{
+    color: aliceblue;
+    font-family: 'Poppin';
+
+}
+.pop2{
+    color: aliceblue;
+    font-family: 'BOLD';
+    background-color:  #3b618186 ;
+    font-size: 12px;
+
+}
+.fechar{
+    margin-bottom: 200px;
+}
+#ocorrencia{
+    color: aliceblue;
+    font-family: 'BOLD';
+    font-size: 22px;
+}
+
+.popup p {
+    margin: 0 0 400px;
+    font-family: 'Poppin';
+
+}
+
+.button{
+    margin-top: -400px;
+}
+.popup #close-button {
+    padding: 10px 20px;
+    background-color: #041829;
+    border: none;
+    color: white;
+    margin-top: -600px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'BOLD';
+
+}
+
+#labelemail{
+    color: aliceblue;
+    font-family: 'BOLD'
+    
+}
+
+#labeloco{
+    color: aliceblue;
+    font-family: 'BOLD';
+    
+}
+
+#email{
+    width: 200px;
+    height: 30px;
+}
+#text{
+    color: #011526;
+}

@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Poppins';
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #011526,#0C4F87);
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+div.gpsfatec {
+    font-family: 'PoppinsBold';
+    font-size: 8px;
+}
+
+div.bolinhas{
+    padding-left: 400px;
+    width: 200px;
+}
