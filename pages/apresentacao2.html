@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unimapper 2 </title>
+    <title>Unimapper 2</title>
     <link rel="stylesheet" href="apresentacao2.css">
     <style>
         @font-face {
             font-family: 'Poppins';
             src: url('/fonts/Poppins-ThinItalic.ttf') format('opentype');
         }
+
         @font-face {
             font-family: 'PoppinsBold';
             src: url('/fonts/Poppins-Bold.ttf') format('opentype');
@@ -20,42 +22,42 @@
         /* CSS responsivo */
         @media (max-width: 768px) {
             body {
+                display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
-            
+
             img.img1 {
                 width: 100%;
                 max-width: 540px;
             }
-            
-            div.perdido {
-                margin-top: 30px;
-                text-align: center;
-                
-            }
-            
-            img.setinha1 {
-                margin-left: 350px;
-            }
-            
+
+            div.perdido,
             div.gpsfatec {
                 text-align: center;
+                margin-top: 20px;
             }
-            
-            h1 {
-                padding-bottom: 0;
+
+            img.setinha1 {
+                margin-left: 0;
+                margin-top: 20px;
             }
-            
-            div.bolinhas{
-                padding-left: 0;
+
+            div.bolinhas {
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                margin-top: 20px;
+            }
+
+            div.bolinhas img {
+                margin: 0 10px;
             }
         }
     </style>
 </head>
+
 <body>
     <div>
         <div class="div1">
@@ -64,7 +66,6 @@
         </div>
         <div class="perdido">
             <h1>Encontre a sala da sua próxima aula!</h1>
-            
         </div>
         <div class="gpsfatec">
             <h1>Com nosso sistema de geolocalização, você pode encontrar sua sala de aula a partir da sua localização atual</h1>
@@ -76,4 +77,5 @@
         </div>
     </div>
 </body>
+
 </html>
