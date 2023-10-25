@@ -5,5 +5,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         // Redirecionar para apresentacao1.html após 7 segundos
         window.location = "./pages/apresentacao1.html"
-    }, 7000); // 7000 milissegundos = 7 segundos
+    }, 4000); // 7000 milissegundos = 7 segundos
 });
