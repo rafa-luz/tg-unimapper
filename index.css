@@ -31,12 +31,11 @@ body{
     }
   }
   
-  .logo.unimapper-1{
-    height: 140px;
+  #logo.unimapper{
+    height: 10000px;
     left: 37px;
-    position: absolute;
     top: 304px;
-    width: 328px;
+    width: 3028px;
 
   }
  
