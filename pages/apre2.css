@@ -34,3 +34,49 @@ div.bolinhas{
     left: 30px;
   }
   
+  .box {
+    position: relative;
+    width: 96px;
+    height: 32px;
+  }
+  
+  .box .group {
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    top: 0px;
+    left: 126px;
+  }
+  
+  .box .frame {
+    left: 0;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+  }
+  
+  .box .vector-wrapper {
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+  }
+  
+  .box .vector {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 12px;
+    left: 12px;
+  }
+  
+  .box .img-wrapper {
+    left: 64px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+  }
+  
