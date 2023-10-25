@@ -1,5 +1,4 @@
 body {
-    min-height: 100vh;
     font-family: 'Poppins';
     align-items: center;
     background-image: linear-gradient(to bottom, #011526,#0C4F87);
@@ -30,7 +29,7 @@ div.bolinhas{
     position: absolute;
     width: 12px;
     height: 22px;
-    top: 40px;
+    top: 24px;
     left: 30px;
   }
   
