@@ -13,11 +13,16 @@ h1 {
 }
 
 div.gpsfatec {
-    font-family: 'PoppinsBold';
+    font-family: 'PoppinsItalic';
     font-size: 8px;
+    margin-bottom: 50px;
 }
 
-div.bolinhas{
+div.bolinhas {
     padding-left: 400px;
     width: 200px;
+}
+
+div.buttom {
+    margin-left: 50px;
 }
