@@ -1,28 +1,112 @@
 body {
-    min-height: 100vh;
-    display: flex;
-    font-family: 'Poppins';
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to bottom, #011526,#0C4F87);
+  font-family: 'Poppins';
+  align-items: center;
+  background-color: #01192D;
 }
 
+/* Botão */
+.buttom{
+    
+  padding-left: 42px;
+}
+.button-49{
+  object-fit: cover;
+  width: 56%;
+  line-height: 46px;
+  font-size: 14px;
+  font-family: 'Poppins-Regular';
+  background: #011526;
+  border-radius: 14px;
+  border-color: #0C4F87;
+  color: #fff;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 2px 2px #07121b;
+  margin-left: 50px;
+  margin-top: 24px;
+  
+}
+
+
+
+
+.seuap{
+  font-size: 12px;
+  margin-top: -9px;
+}
+.logo{
+  margin-left: 55px;
+  margin-top: -38px;
+}
+
+h1.ao{
+  font-family: 'Poppins-Regular';
+  margin-top: -39px;
+  margin-left: 113px;
+  font-size: 21px;
+  line-height: 46px;
+  letter-spacing: 0px;
+  border-color: #0C4F87;
+  text-shadow: 3px 2px 2px #0C4F87;
+}
+h1.welcome{
+  margin-top: -4px;
+  font-family: 'Poppins-Regular';
+  margin-left: 59px;
+  font-size: 43px;
+  line-height: 46px;
+  letter-spacing: 4px;
+  border-color: #0C4F87;
+  text-shadow: 3px 2px 2px #0C4F87;
+}
 h1 {
-    text-align: center;
-    color: aliceblue;
+  text-align: center;
+  width: 273px;
+  margin-left: 49px;
+  color: aliceblue;
+  font-size: 13px;
+  margin-top: -8px;
 }
 
-div.gpsfatec {
-    font-family: 'PoppinsItalic';
-    font-size: 8px;
-    margin-bottom: 50px;
+
+.box .frame {
+  left: 0;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+}
+.frame {
+  position: relative;
+  width: 32px;
+  height: 32px;
 }
 
-div.bolinhas {
-    padding-left: 400px;
-    width: 200px;
+.frame .vector {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  top: 60px;
+  left: 54px;
+
 }
 
-div.buttom {
-    margin-left: 50px;
+@media (max-width: 500px) {
+
+  img.img1 {
+    margin-left: 20px;
+    width: 91%;
+    margin-top: -46px;
+  }
+
+
+
+  img.setinha1 {
+    width: 41px;
+    margin-bottom: 20px;
+    margin-left: 293px;
+    padding-top: 21px;
+  }
+
+
+
 }

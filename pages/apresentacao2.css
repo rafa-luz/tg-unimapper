@@ -9,7 +9,7 @@ h1 {
   width: 273px;
   margin-left: 49px;
   color: aliceblue;
-  font-size: 14px;
+  font-size: 13px;
   margin-top: -8px;
 }
 
@@ -33,6 +33,21 @@ h1 {
   height: 32px;
   top: 0;
 }
+.frame {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  top: 60px;
+  left: 54px;
+
+}
+
 
 .box .vector-wrapper {
   left: 32px;
@@ -75,14 +90,14 @@ h1 {
   img.setinha1 {
     width: 41px;
     margin-bottom: 20px;
-    margin-left: 275px;
-    padding-top: 55px;
+    margin-left: 293px;
+    padding-top: 21px;
   }
 
   h1.perdido {
     width: 271px;
     font-size: 26px;
-    margin-top: -30px;
+    margin-top: 30px;
     margin-bottom: -19px;
     text-align: center;
     margin-left: 21px;
