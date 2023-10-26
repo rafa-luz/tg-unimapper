@@ -7,7 +7,7 @@ body {
 
 /* Botão */
 .buttom{
-    
+  margin-bottom: -64px;
   padding-left: 42px;
 }
 .button-49{
@@ -50,7 +50,7 @@ h1.ao{
   text-shadow: 3px 2px 2px #0C4F87;
 }
 h1.welcome{
-  margin-top: -4px;
+  margin-top: -21px;
   font-family: 'Poppins-Regular';
   margin-left: 59px;
   font-size: 43px;
