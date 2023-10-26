@@ -1,65 +1,92 @@
 body {
-    font-family: 'Poppins';
-    align-items: center;
-    background-image: linear-gradient(to bottom, #011526,#0C4F87);
-    height: 100%;
+  font-family: 'Poppins';
+  align-items: center;
+  background-color: #01192D;
 }
-
 
 h1 {
+  text-align: center;
+  width: 273px;
+  margin-left: 49px;
+  color: aliceblue;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+
+.box {
+  position: relative;
+  width: 96px;
+  height: 32px;
+}
+
+.box .group {
+  position: absolute;
+  top: 58px;
+  left: 133px;
+}
+
+.box .frame {
+  left: 0;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+}
+
+.box .vector-wrapper {
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+}
+
+.box .vector {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 12px;
+  left: 12px;
+}
+
+.box .img-wrapper {
+  left: 64px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 0;
+}
+
+@media (max-width: 500px) {
+
+  img.img1 {
+    margin-left: 20px;
+    width: 91%;
+  }
+
+  div.perdido {
+    margin-top: 21px;
+    margin-left: 29px;
+    width: 63%;
+  }
+
+  img.setinha1 {
+    width: 41px;
+    margin-bottom: 20px;
+    margin-left: 275px;
+    padding-top: 47px;
+  }
+
+  h1.perdido {
+    width: 271px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: -19px;
     text-align: center;
-    color: aliceblue;
+    margin-left: 21px;
+  }
+
+
+
 }
-
-div.gpsfatec {
-    font-family: 'PoppinsBold';
-    font-size: 8px;
-}
-
-
-    .box {
-        position: relative;
-        width: 96px;
-        height: 32px;
-      }
-      
-      .box .group {
-        position: absolute;
-        width: 96px;
-        height: 32px;
-        top: 0px;
-        left: 126px;
-      }
-      
-      .box .frame {
-        left: 0;
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 0;
-      }
-      
-      .box .vector-wrapper {
-        left: 32px;
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 0;
-      }
-      
-      .box .vector {
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        top: 12px;
-        left: 12px;
-      }
-      
-      .box .img-wrapper {
-        left: 64px;
-        position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 0;
-      }
-      
