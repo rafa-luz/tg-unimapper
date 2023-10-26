@@ -22,7 +22,7 @@ h1 {
 
 .box .group {
   position: absolute;
-  top: 58px;
+  top: 28px;
   left: 133px;
 }
 
@@ -63,6 +63,7 @@ h1 {
   img.img1 {
     margin-left: 20px;
     width: 91%;
+    margin-top: -32px;
   }
 
   div.perdido {
@@ -75,7 +76,7 @@ h1 {
     width: 41px;
     margin-bottom: 20px;
     margin-left: 275px;
-    padding-top: 47px;
+    padding-top: 20px;
   }
 
   h1.perdido {
