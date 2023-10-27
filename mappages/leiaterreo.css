@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins';
+  align-items: center;
+  background-color: #01192D;
+  margin-top: -36px
+
+}
+ img.setinha1 {
+  width: 52px;
+  margin-bottom: 20px;
+  margin-left: -2px;
+  padding-top: 11px;
+  }
+
+
+
+.frame-group{
+  margin-top: 200px;
+}
+
+.frame-item {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-smi);
+  background-color: var(--color-darkslategray-100);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+  height: 90px;
+}
+.retangulo{
+  border-radius: 9px;
+  border: 1px solid #59A0DC;
+  background: #042F52;
+  margin-top: 42px;
+  height: 204px;
+  width: 344px;
+  margin-left: 8px;
+}
+
+.frame .vector {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+  top: 60px;
+  left: 54px;
+
+}
+
+.frame-icon{
+  margin-top: 109px;
+  position: absolute;
+  left: 350px;
+  width: 30px;
+  overflow: hidden;
+}
+
+.frame-icon1{
+  margin-top: 74px;
+  position: absolute;
+  left: 350px;
+  width: 30px;
+  overflow: hidden;
+}
+
+.jali{
+  margin-left: 35px;
+  margin-top: 57px;
+  font-family: 'Poppins-Light';
+  width: 295px;
+}
+
+.jali
+.os-estabelecimentos-correspond1 {
+  font-weight: 500;
+}
+.leia-abaixo-os-container1 {
+  align-self: stretch;
+  position: relative;
+}
+.frame7 {
+  color: aliceblue;
+  position: relative;
+  top: 177px;
+  left: 12px;
+  width: 366px;
+  overflow: hidden;
+  text-align: center;
+}
+.frame-child17 {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-smi);
+  background-color: var(--color-darkslategray-100);
+  border: 1px solid var(--color-steelblue-100);
+  box-sizing: border-box;
+  height: 72.3px;
+}
