@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unimapper</title>
+  <link rel="stylesheet" href="/mappages/selecionardestino.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
+  <style>
+    @font-face {
+      font-family: 'Poppins';
+      src: url('/fonts/Poppins-ThinItalic.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'PoppinsBold';
+      src: url('/fonts/Poppins-Bold.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Poppins-Light';
+      src: url('/fonts/Poppins-Light.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Poppins-Regular';
+      src: url('/fonts/Poppins-Regular.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Poppins-Thin';
+      src: url('/fonts/Poppins-Thin.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Poppins-Medium';
+      src: url('/fonts/Poppins-Medium.ttf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Poppins-ThinItalic';
+      src: url('/fonts/Poppins-ThinItalic.ttf') format('opentype');
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="frame"><a href="/pages/bemvindo.html"><img class="vector" src="/vector.svg" /></a></div>
+    <img class="frame-icon" alt="" src="/mappages/Frame.svg" />
+  </div>
+  <div>
+    <img class="frame-icon1" alt="" src="/mappages/Frame (1).svg" />
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopupBtn">&times;</span>
+            <h2 id="ocorrencia">Está enfrentando problemas com as rotas?</h2>
+            <p class="pop2">Nos envie uma ocorrência, contanto sua experiência com o uso do Unimapper!</p>
+            <form action="./php.php" method="post">
+              <div>
+                <label for="email" id="labelemail">Digite aqui seu e-mail</label>
+                <br>
+                <br>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div>
+                  <br>
+                <label for="ocorrencia" id="labeloco">Nos conte aqui qual foi sua experiência</label>
+                <br>
+                <br>
+                <textarea id="text" name="ocorrencia" rows="4" required></textarea>
+              </div>
+              <br>
+              <a href="/pages/finalmente.html"><button id="close-button">Enviar</button></a>
+            
+            </form>
+        </div>
+    </div>
+    <script src="/mappages/script.js"></script>
+  </div>
+  <div class="frame7">
+    <div class="leia-abaixo-os-container1">
+      <label for="local" class="onde">ONDE VOCE ESTÁ ATUALMENTE:</label>
+      <select id="localatual" name="localatual">
+        <option id="choiceLocal" value="cantina1">Cantina</option>
+        <option id="choiceLocal" value="biblioteca1">Biblioteca</option>
+        <option id="choiceLocal" value="sala-de-estudos1">Sala de Estudos</option>
+        <option id="choiceLocal" value="laboratrio-de-informtica1">Laboratório de Informática</option>
+        <option id="choiceLocal" value="sanitarios">Sanitários</option>
+        <option id="choiceLocal" value="secretaria">Secretária</option>
+        <option id="choiceLocal" value="recepcao">Recepção</option>
+      </select>
+      
+    </div>
+    
+      <label for="local2" class="local">PARA ONDE VOCE QUER IR:</label>
+      <select id="localquerir" name="localquerir">
+        <option id="choiceLocal" value="cantina1">Cantina</option>
+        <option id="choiceLocal" value="biblioteca1">Biblioteca</option>
+        <option id="choiceLocal" value="sala-de-estudos1">Sala de Estudos</option>
+        <option id="choiceLocal" value="laboratrio-de-informtica1">Laboratório de Informática</option>
+        <option id="choiceLocal" value="sanitarios">Sanitários</option>
+        <option id="choiceLocal" value="secretaria">Secretária</option>
+        <option id="choiceLocal" value="recepcao">Recepção</option>
+      </select>
+    </div>
+    
+
+  </div>
+  <div class="setinha1"><a href="/pages/finalmente.html"><img src="/setinha.svg" alt="setinha" class="setinha1"></a></div>
+
+</body>
+
+</html>

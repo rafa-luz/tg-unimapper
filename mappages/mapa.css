@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppin';
+  }
+  
+
+  .overlay{
+    margin-top: -330px;
+    margin-left: 100px;
+    cursor: pointer;}
+
+ 
+}
+.pop{
+    color: aliceblue;
+    font-family: 'Poppin';
+
+}
+.pop2{
+    color: aliceblue;
+    font-family: 'BOLD';
+    background-color:  #3b618186 ;
+    font-size: 12px;
+
+}
+.fechar{
+    margin-bottom: 200px;
+}
+#ocorrencia{
+    color: aliceblue;
+    font-family: 'BOLD';
+    font-size: 22px;
+}
+
+.popup p {
+    margin: 0 0 400px;
+    font-family: 'Poppin';
+
+}
+
+.button{
+    margin-top: -400px;
+}
+
+
+#labelemail{
+    color: aliceblue;
+    font-family: 'BOLD'
+    
+}
+
+#labeloco{
+    color: aliceblue;
+    font-family: 'BOLD';
+    
+}
+
+#email{
+    width: 200px;
+    height: 30px;
+}
+#text{
+    color: #011526;
+}
