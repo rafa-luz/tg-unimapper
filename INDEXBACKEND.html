@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UNIMAPPER FATEC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script>
+        function fetchImageBasedOnChoices() {
+            const choice1 = document.getElementById('choice1').value;
+            const choice2 = document.getElementById('choice2').value;
+
+            fetch('/get_image', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `choice1=${choice1}&choice2=${choice2}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const imgElement = document.getElementById('resultingImage');
+                    imgElement.src = data.image_path;
+                });
+        }
+
+
+        function submitQuestion() {
+            const question = document.getElementById('userQuestion').value;
+            fetch('/submit_question', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: 'question=' + encodeURIComponent(question)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    document.getElementById('questionModal').style.display = 'none';
+                });
+        }
+    </script>
+    <style>
+        /* Estilos para o modal */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 30%;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Escolha o local de partida</h1>
+    <select id="choice1">
+        <option value="ent1">Entrada 1</option>
+        <option value="ent2">Entrada 2</option>
+        <option value="ent3">Entrada 3</option>
+        <option value="ent4">Entrada 4</option>
+        <option value="lab10">Laboratorio 10</option>
+        <option value="sec">Secretaria</option>
+        <option value="saladest">Sala de Estudos</option>
+        <option value="profs">Sala dos Professores</option>
+        <option value="aud">Auditorio</option>
+        <option value="cant">Cantina</option>
+        <option value="bint">Banheiro Interno</option>
+        <option value="bex">Banheiro Externo</option>
+    </select>
+    <h1>Escolha o local de destino</h1>
+    <select id="choice2">
+        <option value="ent1">Entrada 1</option>
+        <option value="ent2">Entrada 2</option>
+        <option value="ent3">Entrada 3</option>
+        <option value="ent4">Entrada 4</option>
+        <option value="lab10">Laboratorio 10</option>
+        <option value="sec">Secretaria</option>
+        <option value="saladest">Sala de Estudos</option>
+        <option value="profs">Sala dos Professores</option>
+        <option value="aud">Auditorio</option>
+        <option value="cant">Cantina</option>
+        <option value="bint">Banheiro Interno</option>
+        <option value="bex">Banheiro Externo</option>
+    </select>
+
+    <button onclick="fetchImageBasedOnChoices()">Mostrar mapa</button>
+
+    <img id="resultingImage" alt="Resulting choice" style="max-width: 100%; margin-top: 20px;">
+
+    <button onclick="document.getElementById('questionModal').style.display='block'">Enviar Ocorrência</button>
+
+    <!-- Modal para enviar dúvida -->
+    <div id="questionModal" class="modal">
+        <div class="modal-content">
+            <h2>Enviar Ocorrência</h2>
+            <form id="questionForm" onsubmit="return submitQuestion();">
+                <textarea id="userQuestion" required placeholder="Digite sua ocorrência aqui" rows="4"></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <button onclick="document.getElementById('questionModal').style.display='none'">Fechar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
