@@ -11,7 +11,7 @@ body {
 #choice1{
   text-align: center;
   font-family: 'Poppins-Regular';
-  font-size: 11px;
+  font-size: 13px;
   color: aliceblue;
   width: 9rem;
   height: 38PX;
@@ -21,12 +21,11 @@ body {
   background: #042F52;
   MARGIN-TOP: 24px;
   margin-left: 50px;
-  margin-bottom: 60px;
 }
 #choice2{
   text-align: center;
     font-family: 'Poppins-Regular';
-    font-size: 11px;
+    font-size: 13px;
     color: aliceblue;
     width: 9rem;
     height: 38PX;
@@ -36,18 +35,9 @@ body {
     background: #042F52;
     MARGIN-TOP: 25px;
     margin-left: 6px;
-    margin-bottom: 60px;
 }
 
-.retangulo {
-  border-radius: 1vw;
-  border: 0.5vw solid #59A0DC;
-  background: #042F52;
-  margin-top: 8vw;
-  height: 21vw;
-  width: 103%;
-  margin-left: -8px;
-}
+
 
 h1.cantina{
   font-family: 'Poppins-Thin';
@@ -109,10 +99,10 @@ h1.saladeestudos{
 
 .frame .vector {
   position: absolute;
-  width: 10px;
+  width: 12px;
   height: 22px;
-  top: 44px;
-  left: 27px;
+  top: 43px;
+  left: 25px;
 }
 
 .frame-icon {
@@ -173,14 +163,28 @@ h1.saladeestudos{
   /* Adicione estilos específicos para telas menores que 768px aqui */
   /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
 }
-
+.mostramap{
+  text-align: center;
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  color: aliceblue;
+  width: 9rem;
+  height: 38PX;
+  flex-shrink: 0;
+  border-radius: 13px;
+  border: 2px solid #5081aa;
+  background: #1464a3;
+  MARGIN-TOP: 15px;
+  margin-left: 124px;
+  margin-bottom: 60px;
+}
 
 .retangulo{
   border-radius: 9px;
     /* border: 1px solid #59A0DC; */
     background: #042F52;
     margin-top: 42px;
-    height: 89px;
+    height: 156px;
     width: 100%;
     margin-left: 0;
     box-shadow: 0px 6px;
