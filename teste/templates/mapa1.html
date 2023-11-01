@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimapper</title>
+    <link rel="stylesheet" href="static\mapa1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
+    <script>
+        function fetchImageBasedOnChoices() {
+            const choice1 = document.getElementById('choice1').value;
+            const choice2 = document.getElementById('choice2').value;
+
+            fetch('/get_image', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `choice1=${choice1}&choice2=${choice2}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    const imgElement = document.getElementById('resultingImage');
+                    imgElement.src = data.image_path;
+                });
+        }
+    </script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            width: 30%;
+            background-color: #ffffff;
+        }
+        
+        @font-face {
+            font-family: 'Poppins';
+            src: url('/fonts/Poppins-ThinItalic.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'PoppinsBold';
+            src: url('/fonts/Poppins-Bold.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins-Light';
+            src: url('/fonts/Poppins-Light.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins-Regular';
+            src: url('/fonts/Poppins-Regular.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins-Thin';
+            src: url('/fonts/Poppins-Thin.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins-Medium';
+            src: url('/fonts/Poppins-Medium.ttf') format('opentype');
+        }
+        
+        @font-face {
+            font-family: 'Poppins-ThinItalic';
+            src: url('/fonts/Poppins-ThinItalic.ttf') format('opentype');
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="frame">
+            <a href="templates\leiaterreo.html"><img class="vector" src="static\vector.svg" /></a>
+        </div>
+        <img class="frame-icon" alt="" src="static\Frame.svg" />
+    </div>
+    <div>
+        <img class="frame-icon1" alt="" src="static\Frame (1).svg" />
+    </div>
+    <div class="retangulo">
+        <select id="choice1">
+            <option value="ent1">Entrada 1</option>
+            <option value="ent2">Entrada 2</option>
+            <option value="ent3">Entrada 3</option>
+            <option value="ent4">Entrada 4</option>
+            <option value="lab10">Laboratorio 10</option>
+            <option value="sec">Secretaria</option>
+            <option value="saladest">Sala de Estudos</option>
+            <option value="profs">Sala dos Professores</option>
+            <option value="aud">Auditorio</option>
+            <option value="cant">Cantina</option>
+            <option value="bint">Banheiro Interno</option>
+            <option value="bex">Banheiro Externo</option>
+        </select>
+        <img class="imgsetinha" src="static\setinha.svg" alt="setinha">
+        <select id="choice2">
+            <option value="ent1">Entrada 1</option>
+            <option value="ent2">Entrada 2</option>
+            <option value="ent3">Entrada 3</option>
+            <option value="ent4">Entrada 4</option>
+            <option value="lab10">Laboratorio 10</option>
+            <option value="sec">Secretaria</option>
+            <option value="saladest">Sala de Estudos</option>
+            <option value="profs">Sala dos Professores</option>
+            <option value="aud">Auditorio</option>
+            <option value="cant">Cantina</option>
+            <option value="bint">Banheiro Interno</option>
+            <option value="bex">Banheiro Externo</option>
+        </select>
+    </div>
+    <button onclick="fetchImageBasedOnChoices()">Mostrar mapa</button>
+    <img id="resultingImage" alt="Resulting choice" style="max-width: 100%; margin-top: 20px;">
+</body>
+
+</html>
