@@ -1,0 +1,262 @@
+body {
+    font-family: 'Poppins';
+    align-items: center;
+    background-color: #01192D;
+    margin-top: -36px
+}
+
+.imgsetinha {
+    margin-left: 3px;
+}
+
+#choice1 {
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    font-size: 11px;
+    color: aliceblue;
+    width: 9rem;
+    height: 38PX;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 2px solid #59A0DC;
+    background: #042F52;
+    MARGIN-TOP: 24px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+#choice2 {
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    font-size: 11px;
+    color: aliceblue;
+    width: 9rem;
+    height: 38PX;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 2px solid #59A0DC;
+    background: #042F52;
+    MARGIN-TOP: 25px;
+    margin-left: 6px;
+    margin-bottom: 60px;
+}
+
+.retangulo {
+    border-radius: 1vw;
+    border: 0.5vw solid #59A0DC;
+    background: #042F52;
+    margin-top: 8vw;
+    height: 21vw;
+    width: 103%;
+    margin-left: -8px;
+}
+
+h1.cantina {
+    font-family: 'Poppins-Thin';
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h1.saladeestudos {
+    font-family: 'Poppins-Thin';
+    font-size: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#localquerir,
+#localatual {
+    position: relative;
+}
+
+#localquerir::before,
+#localatual::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    /* Cor da seta */
+}
+
+img.setinha1 {
+    width: 62px;
+    margin-left: 172px;
+    padding-top: 320px;
+}
+
+#choiceLocal {
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.frame-group {
+    margin-top: 20vw;
+}
+
+.frame-item {
+    align-self: stretch;
+    position: relative;
+    border-radius: 1vw;
+    background-color: var(--color-darkslategray-100);
+    border: 0.5vw solid var(--color-steelblue-100);
+    box-sizing: border-box;
+    height: 12vw;
+}
+
+.frame .vector {
+    position: absolute;
+    width: 10px;
+    height: 22px;
+    top: 44px;
+    left: 27px;
+}
+
+.frame-icon {
+    margin-top: 14vw;
+    position: absolute;
+    left: 58vw;
+    width: 5vw;
+    overflow: hidden;
+}
+
+.frame-icon1 {
+    margin-top: 9.5vw;
+    position: absolute;
+    left: 58vw;
+    width: 5vw;
+    overflow: hidden;
+}
+
+.jali {
+    margin-left: 7vw;
+    margin-top: 10vw;
+    font-family: 'Poppins-Light';
+    width: 45vw;
+}
+
+.jali.os-estabelecimentos-correspond1 {
+    font-weight: 500;
+}
+
+.leia-abaixo-os-container1 {
+    align-self: stretch;
+    position: relative;
+    margin-top: 8vw;
+}
+
+.frame7 {
+    color: aliceblue;
+    position: relative;
+    top: 11vw;
+    left: 1vw;
+    width: 70vw;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Poppins-Regular';
+}
+
+.frame-child17 {
+    align-self: stretch;
+    position: relative;
+    border-radius: 1vw;
+    background-color: var(--color-darkslategray-100);
+    border: 0.5vw solid var(--color-steelblue-100);
+    box-sizing: border-box;
+    height: 9vw;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adicione estilos específicos para telas menores que 768px aqui */
+    /* Por exemplo, ajuste tamanhos de fonte, margens, etc. */
+}
+
+.retangulo {
+    border-radius: 9px;
+    /* border: 1px solid #59A0DC; */
+    background: #042F52;
+    margin-top: 42px;
+    height: 89px;
+    width: 100%;
+    margin-left: 0;
+    box-shadow: 0px 6px;
+}
+
+.frame .vector {
+    position: absolute;
+    width: 12px;
+    height: 22px;
+    top: 40px;
+    left: 37px;
+}
+
+.frame-icon {
+    margin-top: 102px;
+    position: absolute;
+    left: 373px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.frame-icon1 {
+    margin-top: 136px;
+    position: absolute;
+    left: 373px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.popup {
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    width: 73%;
+    height: 72%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: -77px;
+    box-shadow: 0 9px 16px #011526;
+    text-align: center;
+    z-index: 9999;
+    top: 52px;
+    left: 25px;
+    padding: 35px;
+}
+
+.popup-content {
+    background-color: #011526;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10000;
+    /* Defina um z-index maior aqui */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.pop2 {
+    color: aliceblue;
+    background-color: #3b618186;
+    font-size: 12px;
+}
+
+#ocorrencia {
+    color: aliceblue;
+    width: 280px;
+    font-size: 20px;
+}
